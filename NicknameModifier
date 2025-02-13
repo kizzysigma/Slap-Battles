@@ -1,4 +1,4 @@
-getgenv().enabled = false
+_G.enabled = false
 
 getgenv().names = {
 "Username1",
