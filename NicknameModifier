@@ -4,7 +4,7 @@ getgenv().names = {
 "Username1",
 "Username2",
 "Username3",
-"Username4,
+"Username4",
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fizzyscripting/Slap-Battles/refs/heads/main/NicknameModifierOBF"))()
