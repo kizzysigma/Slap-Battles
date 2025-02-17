@@ -1,0 +1,12 @@
+if getgenv().farm then
+for i = 1, 2 do
+while getgenv().farm do
+local args = {
+[1] = game.Players.LocalPlayer,
+[2] = false
+}
+game:GetService("ReplicatedStorage").Events.Boxing:FireServer(unpack(args))
+wait()
+end
+end
+end
