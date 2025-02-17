@@ -1,2 +1,2 @@
 getgenv().farm = true
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fizzyscripting/Slap-Battles/refs/heads/main/BoxerFarmOBF"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fizzyscripting/Slap-Battles/refs/heads/main/BoxerFarmSRC"))()
