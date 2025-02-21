@@ -1,10 +1,18 @@
-_G.enabled = false
+_G.enabled = true
 
-getgenv().names = {
-"Username1",
-"Username2",
-"Username3",
-"Username4",
+getgenv().settings = {
+    ["Names"] = {
+        "Alek's cock in aaa's butthole",
+        "aaa16aaa sucking alek's dick",
+        "alek cumming in aaa16aaa's mouth",
+        "alek and aaa16aaa having gay sex"
+    },
+    ["SlapTexts"] = {
+        "Alek's bbc in aaa16aaa's hole",
+        "i love fucking aaa16aaa",
+        "aaa16aaa is a cute submissive femboy",
+        "aaa16aaa is a nigger"
+    }
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fizzyscripting/Slap-Battles/refs/heads/main/NicknameModifierOBF"))()
