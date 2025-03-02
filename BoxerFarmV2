@@ -1,0 +1,2 @@
+_G.SecretFunction = false -- DO NOT SET AS TRUE.
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fizzyscripting/Slap-Battles/refs/heads/main/BoxerFarmV2OBF"))()
