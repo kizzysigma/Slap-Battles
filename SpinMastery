@@ -1,0 +1,28 @@
+-- Herkle is a fag
+
+spawn(function()
+v = {workspace.DEATHBARRIER, workspace.DEATHBARRIER2, workspace.AntiDefaultArena}
+for _, v in ipairs(v) do
+v:Destroy()
+end
+fireclickdetector(workspace.Lobby.spin.ClickDetector)
+game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(-910, 328, 3))
+task.wait(1)
+local baseplate = Instance.new("Part")
+baseplate.Size = Vector3.new(100, 2, 100)
+baseplate.Position = Vector3.new(55056, 921, 1452)
+baseplate.Anchored = true
+baseplate.TopSurface = Enum.SurfaceType.Studs
+baseplate.Color = Color3.fromRGB(163, 162, 165)
+baseplate.Parent = game.Workspace
+game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(55059, 932, 1460))
+task.wait(.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+while task.wait(.3) do
+game:GetService("ReplicatedStorage").AdminAbility:FireServer("Invisibility")
+end
+game:GetService('Players').LocalPlayer.Idled:Connect(function()
+game:GetService('VirtualUser'):CaptureController()
+game:GetService('VirtualUser'):ClickButton2(Vector2.new())
+end)
+end)
