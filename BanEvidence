@@ -1,4 +1,4 @@
 -- Inspired by Aquoupi ban evidence (Oudated)
 
 _G.Username = "Player username here"
-laodstring(game:HttpGet("https://github.com/fizzyscripting/Slap-Battles/raw/refs/heads/main/BanEvidenceOBF"))()
+loadstring(game:HttpGet("https://github.com/fizzyscripting/Slap-Battles/raw/refs/heads/main/BanEvidenceOBF"))()
