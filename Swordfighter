@@ -1,0 +1,14 @@
+-- Herkle is a fag
+
+if game.PlaceId == 117232463555132 then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7.252746105194092, 845.4999389648438, 38.60773468017578)
+game.Workspace.Map.Components.NPCs.FinalBoss.FinalBoss.Torso.Size = Vector3.new(17, 17, 17)
+else
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(317.4964294433594, 39.67465591430664, 197.4215545654297)
+task.wait(0.7)
+game:GetService("ReplicatedStorage").RetroAbility:FireServer("Ban Hammer")
+task.wait(0.8)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(308.5379943847656, 41.165496826171875, 189.84616088867188)
+end
