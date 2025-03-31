@@ -1,4 +1,9 @@
--- Inspired by Aquoupi ban evidence (Oudated)
-
 _G.Username = "Player username here"
-loadstring(game:HttpGet("https://github.com/fizzyscripting/Slap-Battles/raw/refs/heads/main/BanEvidenceOBF"))()
+
+if game.Players[_G.Username].leadedstats.Slaps.Value < 11500 then
+game.Players[_G.Username].leaderstats.Slaps.Value = "11500"
+end
+game.Players[_G.Username].leaderstats.Glove.Value = "el gato"
+while task.wait(.06) do
+game.Players[_G.Username].leaderstats.Slaps.Value = game.Players[_G.Username].leaderstats.Slaps.Value + 1
+end
