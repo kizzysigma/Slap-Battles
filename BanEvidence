@@ -1,6 +1,6 @@
 _G.Username = "Player username here"
 
-if game.Players[_G.Username].leadedstats.Slaps.Value < 11500 then
+if game.Players[_G.Username].leaderstats.Slaps.Value < 11500 then
 game.Players[_G.Username].leaderstats.Slaps.Value = "11500"
 end
 game.Players[_G.Username].leaderstats.Glove.Value = "el gato"
