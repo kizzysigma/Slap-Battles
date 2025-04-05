@@ -14,12 +14,12 @@ for v = 1, 100 do local args = {
     [1] = "AddPillow"
 }
 game:GetService("ReplicatedStorage").Events.PillowEvent:FireServer(unpack(args)) end
-task.wait(1)
+task.wait(1.45)
 h.CFrame = workspace[p.Name .. "'s PillowFort"]:FindFirstChild("Level0"):FindFirstChild("plate").CFrame
 task.wait(.15)
 fireclickdetector(workspace.Lobby.Shotgun.ClickDetector)
 for _, v in pairs(workspace:GetChildren()) do
-if string.find(v.Name, "PillowFort") and string.find(v.Name, LocalPlayer.Name) then
+if string.find(v.Name, "PillowFort") and string.find(v.Name, p.Name) then
 h.CFrame = (v.PrimaryPart or v).CFrame + Vector3.new(0, 5, 0)
 break
 end
