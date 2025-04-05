@@ -5,11 +5,12 @@ local c = p.Character or p.CharacterAdded:Wait()
 local h = c.HumanoidRootPart
 
 fireclickdetector(workspace.Lobby.Pillow.ClickDetector)
+task.wait(.5)
 local args = {
     [1] = CFrame.new(-61.39110565185547, -1.9728484153747559, 3.1807918548583984) * CFrame.Angles(-1.4062297282180225e-07, 1.5007898807525635, 1.3011522526085173e-07)
 }
 game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
-task.wait(.3)
+task.wait(.4)
 for v = 1, 100 do local args = {
     [1] = "AddPillow"
 }
