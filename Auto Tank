@@ -1,0 +1,37 @@
+-- // You need pillow and shotgun for this.
+
+local p = game.Players.LocalPlayer
+local c = p.Character or p.CharacterAdded:Wait()
+local h = c.HumanoidRootPart
+
+fireclickdetector(workspace.Lobby.Pillow.ClickDetector)
+local args = {
+    [1] = CFrame.new(-61.39110565185547, -1.9728484153747559, 3.1807918548583984) * CFrame.Angles(-1.4062297282180225e-07, 1.5007898807525635, 1.3011522526085173e-07)
+}
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
+task.wait(.3)
+for v = 1, 100 do local args = {
+    [1] = "AddPillow"
+}
+game:GetService("ReplicatedStorage").Events.PillowEvent:FireServer(unpack(args)) end
+task.wait(1)
+h.CFrame = workspace[p.Name .. "'s PillowFort"]:FindFirstChild("Level0"):FindFirstChild("plate").CFrame
+task.wait(.15)
+fireclickdetector(workspace.Lobby.Shotgun.ClickDetector)
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local h = LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+for _, v in pairs(workspace:GetChildren()) do
+if string.find(v.Name, "PillowFort") and string.find(v.Name, LocalPlayer.Name) then
+h.CFrame = (v.PrimaryPart or v).CFrame + Vector3.new(0, 5, 0)
+break
+end
+end
+task.spawn(function()
+while task.wait() do
+local args = {
+    [1] = "explosive"
+}
+game:GetService("ReplicatedStorage").GeneralAbility:FireServer(unpack(args))
+end
+end)
