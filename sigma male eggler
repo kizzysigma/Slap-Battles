@@ -1,0 +1,5 @@
+for _, a in pairs(workspace.EasterHuntEggs:GetDescendants()) do
+if a:IsA("ClickDetector") then
+fireclickdetector(a)
+end
+end
